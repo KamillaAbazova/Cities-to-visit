@@ -2,20 +2,20 @@ export const datas = [
     {
         number: 1,
         name: "Eiffel Tower",
-        about: "What would Paris be without its symbolic Eiffel Tower? Built by Gustave Eiffel to commemorate the centenary of the French Revolution, it is presented at the Exposition Universelle in Paris in 1889. 324 meters high, it is one of the most visited monuments in the world with nearly 7 million visitors a year.",
-        picture: "https://images.unsplash.com/photo-1578854176045-e0373d37bbdf?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fCVEMCVCRiVEMCVCMCVEMSU4MCVEMCVCOCVEMCVCNnxlbnwwfHwwfHx8MA%3D%3D"
+        about: "What would Paris be without its symbolic Eiffel Tower? Built by Gustave Eiffel to commemorate the centenary of the French Revolution, it is presented at the Exposition Universelle in Paris in 1889. 324 meters high, it is one of the most visited monuments in the world with nearly 7 million visitors a year."
+       
     },
     {
         number: 2,
         name: "Statue of Liberty",
-        about: "The Statue of Liberty Enlightening the World was a gift of friendship from the people of France to the people of the United States and is a universal symbol of freedom and democracy. The Statue of Liberty was dedicated on October 28, 1886, designated as a National Monument in 1924 and restored for her centennial on July 4, 1986",
-        picture: "https://images.unsplash.com/photo-1588384153148-ebd739ac430c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3RhdHVlJTIwb2YlMjBsaWJlcnR5fGVufDB8fDB8fHww"
+        about: "The Statue of Liberty Enlightening the World was a gift of friendship from the people of France to the people of the United States and is a universal symbol of freedom and democracy. The Statue of Liberty was dedicated on October 28, 1886, designated as a National Monument in 1924 and restored for her centennial on July 4, 1986"
+        
     },
     {
         number: 3,
         name: "Big Ben",
-        about: "Big Ben, referred to as the Great Bell of the clock, is situated at the north end of the Palace of Westminster. Also known as the clock tower, its official name is Elizabeth Tower. It is also the second-largest four-faced chiming clock in the entire world.",
-        picture: "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlnJTIwYmVufGVufDB8fDB8fHww"
+        about: "Big Ben, referred to as the Great Bell of the clock, is situated at the north end of the Palace of Westminster. Also known as the clock tower, its official name is Elizabeth Tower. It is also the second-largest four-faced chiming clock in the entire world."
+        
     },
     {
         number: 4,

@@ -2,37 +2,19 @@ import { useState } from 'react';
 import { data } from './data';
 import { datas } from './datas';
 import './App.css';
+import Carousel from './Carousel';
 
 function App() {
 
   const [cities, setCities] = useState(data);
-  const [attraction, setAttraction] = useState(0);
-  const {number, name, about, picture} = datas[attraction];
+  
   
 
   const removeCity = (id) => {
     let newCities = cities.filter(city => city.id !== id);
     setCities(newCities)
   }
-  const previousPlace = () => {
-    setAttraction((attraction => {
-      attraction --;
-      if(attraction < 0) {
-        return datas.length - 1;
-      }
-      return attraction;
-    }))
-  }
-  const nextPlace = () => {
-    setAttraction((attraction => {
-      attraction ++;
-      if(attraction > datas.length - 1) {
-        attraction = 0;
-      }
-      return attraction;
-    }))
-  }
-
+  
   return (
     <div>
       <div className='container'>
@@ -47,7 +29,7 @@ function App() {
               <h2>{id} - {cityName}</h2>
             </div>
             <div className='container'>
-              <img src={image} width="500px" alt='city'/>
+              <Carousel images={image}/>
             </div>
             <div className='container'>
               <p>{description}</p>
@@ -67,22 +49,7 @@ function App() {
       <div className='container'>
         <h2 className='heading'>{datas.length} famous places to visit</h2>
       </div>
-      <div className='box'>
-                <div className='container'>
-                  <img src={picture} width="400px" alt='place'/>
-                </div>
-                <div className='container'>
-                  <h3>{number}. {name}</h3>
-                </div>
-                <div className='container'>
-                  <p>{about}</p>
-                </div>
-                <div className='container'>
-                  <button className='btn' onClick={previousPlace}>Previous</button>
-                  <button className='btn' onClick={nextPlace}>Next</button>
-                </div>
-
-              </div>
+      
     </div>
   );
 }
