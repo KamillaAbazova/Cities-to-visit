@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { datas } from "./datas";
 
-function Carousel() {
+function Carousel({images}) {
     const [attraction, setAttraction] = useState(0);
-    const {number, name, about, picture} = datas[attraction];
+    const {placeName, about, picture} = images[attraction];
 
     const previousPlace = () => {
         setAttraction((attraction => {
           attraction --;
           if(attraction < 0) {
-            return datas.length - 1;
+            return images.length - 1;
           }
           return attraction;
         }))
@@ -17,7 +16,7 @@ function Carousel() {
       const nextPlace = () => {
         setAttraction((attraction => {
           attraction ++;
-          if(attraction > datas.length - 1) {
+          if(attraction > images.length - 1) {
             attraction = 0;
           }
           return attraction;
@@ -32,7 +31,7 @@ return(
                   <img src={picture} width="400px" alt='place'/>
                 </div>
                 <div className='container'>
-                  <h3>{number}. {name}</h3>
+                  <h3>{placeName}</h3>
                 </div>
                 <div className='container'>
                   <p>{about}</p>
